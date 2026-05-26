@@ -4,7 +4,7 @@
   align-items: center;
   padding: 7rem 0 5rem;
   position: relative;
-  overflow: hidden;
+  overflow: clip;
   background:
     radial-gradient(ellipse 80% 60% at 70% 50%, rgba(37, 99, 235, 0.12) 0%, transparent 70%),
     var(--bg-primary);
@@ -83,22 +83,21 @@
 
 .hero__planet-glow {
   position: absolute;
-  width: 440px;
-  height: 440px;
-  background: radial-gradient(circle, rgba(37, 99, 235, 0.3) 0%, transparent 70%);
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.45) 0%, rgba(37, 99, 235, 0.15) 40%, transparent 70%);
   border-radius: 50%;
-  filter: blur(40px);
+  filter: blur(60px);
 }
 
 .hero__planet-img {
-  width: 420px;
-  height: 420px;
-  object-fit: cover;
-  border-radius: 50%;
+  width: 520px;
+  height: 520px;
+  object-fit: contain;
   position: relative;
   z-index: 1;
   animation: float 6s ease-in-out infinite;
-  box-shadow: 0 0 80px rgba(37, 99, 235, 0.4), 0 0 160px rgba(37, 99, 235, 0.15);
+  filter: drop-shadow(0 0 40px rgba(37, 99, 235, 0.6)) drop-shadow(0 0 80px rgba(37, 99, 235, 0.3));
 }
 
 @keyframes float {
@@ -108,13 +107,13 @@
 
 @media (max-width: 900px) {
   .hero__planet-img {
-    width: 320px;
-    height: 320px;
+    width: 380px;
+    height: 380px;
   }
 
   .hero__planet-glow {
-    width: 320px;
-    height: 320px;
+    width: 520px;
+    height: 520px;
   }
 }
 
@@ -141,12 +140,12 @@
   }
 
   .hero__planet-img {
-    width: 240px;
-    height: 240px;
+    width: 280px;
+    height: 280px;
   }
 
   .hero__planet-glow {
-    width: 240px;
-    height: 240px;
+    width: 420px;
+    height: 420px;
   }
 }
