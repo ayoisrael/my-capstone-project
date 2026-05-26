@@ -82,12 +82,12 @@
   gap: 0;
 }
 
-.planet-card__distance-label {
+/* .planet-card__distance-label {
   font-size: 0.78rem;
   color: #718096;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-}
+} */
 
 .planet-card__distance-value {
   font-size: 0.9rem;
