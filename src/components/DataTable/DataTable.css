@@ -34,10 +34,11 @@
 /* ── Scrollable wrapper ── */
 .data-table__wrapper {
   overflow-x: auto;
-  border-radius: 10px;
-  border: 1.5px solid #9ec5fe;
-  overflow: hidden;
-  -webkit-overflow-scrolling: touch;
+  overflow-y: visible;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-radius: 16px;
 }
 
 /* ── Table base ── */
@@ -162,4 +163,31 @@
 
 .data-table__special-category {
   background: #d1e3ff !important;
+}
+
+/* ── Mobile ── */
+@media (max-width: 640px) {
+  .data-table {
+    font-size: 0.78rem;
+    min-width: 520px;
+  }
+
+  .data-table th {
+    padding: 0.65rem 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .data-table td {
+    padding: 0.55rem 0.5rem;
+  }
+
+  .data-table__category,
+  .data-table__subcategory {
+    padding: 0.55rem 0.4rem;
+    font-size: 0.75rem;
+  }
+
+  .data-table__wrapper {
+    border-radius: 8px;
+  }
 }
