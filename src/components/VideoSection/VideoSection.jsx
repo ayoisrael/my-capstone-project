@@ -13,10 +13,7 @@ function VideoSection() {
             playsInline
             poster="https://anurella.github.io/images/earth.webp"
           >
-            <source
-              src="../src/assets/solar system video.mp4"
-              type="video/mp4"
-            />
+            <source src="../src/assets/solar.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <div className="video-section__play-btn" aria-hidden="true">
